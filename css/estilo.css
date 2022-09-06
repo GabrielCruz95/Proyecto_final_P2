@@ -1,0 +1,67 @@
+/* Agregar gradiente a la nav y logo */
+.gradiente{
+background-image: linear-gradient(to right,rgba(0, 0, 255, 0.848),rgba(0, 255, 247, 0.93))
+}
+
+/*Correccion de tamaño de imagen*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Tamaño de logo */
+.logo img{
+    height: 100px;
+}
+/* fondo de la web */
+.fondo{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/fonde.jpg);
+    background-attachment: fixed;
+}
+/* color de la nav vertical */
+.color{
+    background-color: rgba(0, 255, 255, 0.316);
+}
+/* fuente de la nav */
+a{
+    font-size: 20px;
+}
+/* Movimiento de logos */
+a img{
+    transition: all 1s;
+}
+a img:hover{
+    transform: translateY(-15px);
+}
+/* Movimiento de titulos */
+h1{
+    color: black;
+    padding: 5px;
+    transition: color 3s, padding 2s;
+}
+h1:hover{
+    color: blueviolet;
+    padding: 10px;
+}
+/* Animacion de imagenes */
+@keyframes animacion{
+    0%{transform: scale(.2,.2);}
+    0%{transform: scale(.3,.3);}
+    50%{transform: scale(.5,.5);}
+    75%{transform: scale(.75,.75);}
+    100%{transform: scale(1,1);}
+}
+.animacionImg{
+    animation-name: animacion;
+    animation-timing-function: infinite;
+    animation-duration: 2s;
+}
+/* Animacion de los inputs */
+input{
+    font-size: 18px; transition: font-size 1s;
+}
+input:focus{
+    font-size: 35px;
+}
